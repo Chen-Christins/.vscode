@@ -1,0 +1,150 @@
+{
+    "files.exclude": {
+        "**/.cache": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Comment",
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "comment.line",
+                    "comment.line.double-slash",
+                    "punctuation.definition.comment",
+                ],
+                "settings": {
+                    // "foreground": "#33CC33", //设置颜色
+                    // "fontStyle": "italic bold", //斜体加粗
+                    
+                    "fontStyle": "italic", //斜体 
+                    // "fontStyle": "italic underline", //斜体下划线
+                    // "fontStyle": "italic bold underline", //斜体粗体下划线
+                }
+            },
+        ]
+    },
+    "editor.fontLigatures": "'ss09', 'cv30', 'cv02'",
+    "doxdocgen.generic.authorName": "Chen-Christins",
+    "doxdocgen.generic.authorEmail": "christins.orz@gmail.com",
+    "doxdocgen.generic.authorTag": "@author {author}",
+    // Smart text snippet for constructors.
+    "doxdocgen.generic.splitCasingSmartText": false,
+    "doxdocgen.file.fileOrder": [
+        "file",
+        "brief",
+        "author",
+        "date",
+        "copyright",
+    ],
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Apache 2.0"
+    ],
+    "doxdocgen.generic.order": [
+        "brief",
+        "tparam",
+        "param",
+        "return",
+    ],
+    "doxdocgen.generic.useGitUserName": true,
+    "doxdocgen.generic.commandSuggestionAddPrefix": true,
+    "doxdocgen.generic.customTags": [],
+    "doxdocgen.cpp.ctorText": "构造函数",
+    "doxdocgen.cpp.dtorText": "析构函数",
+    "doxdocgen.generic.boolReturnsTrueFalse": false,
+    "clangd.path": "/apps/clangd_18.1.3/bin/clangd",
+    "clangd.detectExtensionConflicts": true,
+    // 查找的头文件路径，每一项前缀 -I
+    "clangd.fallbackFlags": [],
+    "editor.links": false,
+    "clangd.arguments": [
+        // 标记compelie_commands.json文件的目录位置
+        "--compile-commands-dir=${workspaceFolder}/build",
+        // 在后台自动分析文件（基于complie_commands)
+        "--background-index",
+        // 同时开启的任务数量
+        "-j=12",
+        // 全局补全（会自动补充头文件）
+        "--all-scopes-completion",
+        // 更详细的补全内容
+        "--completion-style=detailed",
+        // Include what you use
+        "--header-insertion=never",
+        // pch优化的位置 disk memory
+        "--pch-storage=memory",
+        "--cross-file-rename",
+        "--enable-config",
+        // clang-format style to apply by default when no .clang-format file is found
+        "--fallback-style=WebKit",
+        "--pretty",
+        "--clang-tidy",
+        "--query-driver=clang++",
+    ],
+    "files.associations": {
+        "condition_variable": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "semaphore": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "cinttypes": "cpp",
+        "typeinfo": "cpp",
+        "buffer": "cpp",
+        "netfwd": "cpp"
+    }
+}
