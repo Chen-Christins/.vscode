@@ -7,7 +7,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Launch",
-            "program": "${workspaceFolder}/bin/test_bytearray",
+            "program": "${workspaceFolder}/bin/",
             "args": [],
             "cwd": "${workspaceFolder}"
         }
