@@ -10,6 +10,7 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
+    "editor.fontFamily": "Fira Code",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -34,7 +35,7 @@
         ]
     },
     "editor.fontLigatures": "'ss09', 'cv30', 'cv02'",
-    "doxdocgen.generic.authorName": "Chen-Christins",
+    "doxdocgen.generic.authorName": "Christins",
     "doxdocgen.generic.authorEmail": "christins.orz@gmail.com",
     "doxdocgen.generic.authorTag": "@author {author}",
     // Smart text snippet for constructors.
