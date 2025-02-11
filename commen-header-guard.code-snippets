@@ -18,7 +18,7 @@
 
 	"Add Header Template": {
 		"scope": "c, cpp",
-		"prefix": "@Header",
+		"prefix": "@Commen-Header-guard",
 		"description": "Add #ifndef, #define and #endif",
 		"body": [
 			"#ifndef __${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H__",
