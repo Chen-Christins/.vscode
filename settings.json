@@ -28,7 +28,7 @@
                     // "foreground": "#33CC33", //设置颜色
                     // "fontStyle": "italic bold", //斜体加粗
                     
-                    "fontStyle": "italic", //斜体
+                    // "fontStyle": "italic", //斜体
                     // "fontStyle": "italic underline", //斜体下划线
                     // "fontStyle": "italic bold underline", //斜体粗体下划线
                 }
@@ -149,5 +149,6 @@
         "typeinfo": "cpp",
         "buffer": "cpp",
         "netfwd": "cpp"
-    }
+    },
+    "notebook.lineNumbers": "on"
 }
