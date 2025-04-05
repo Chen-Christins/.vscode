@@ -13,3 +13,8 @@ xx:
 		mkdir build; \
 		cd build && cmake ..; \
 	fi
+clean:
+	if [ -d "build" ]; then \
+		cd build && $(MAKE) clean; \
+		rm -rf build; \
+	fi
