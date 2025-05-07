@@ -10,8 +10,19 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
+    "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
     "editor.fontFamily": "Fira Code",
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.highlights.backgroundColourScheme": [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "violet"
+    ],
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -65,7 +76,10 @@
     "doxdocgen.generic.boolReturnsTrueFalse": false,
     "clangd.detectExtensionConflicts": true,
     // 查找的头文件路径，每一项前缀 -I
-    "clangd.fallbackFlags": [],
+    "clangd.fallbackFlags": [
+        "-xc++",
+        "-std=c++17",
+    ],
     "editor.links": false,
     "clangd.arguments": [
         // 标记compelie_commands.json文件的目录位置
