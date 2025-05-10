@@ -12,7 +12,7 @@
     },
     "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
-    "editor.fontFamily": "'Fira Code', 'Jetbrains Mono', 'Courier New'",
+    "editor.fontFamily": "'Fira Code Retina', 'Fira Code', 'Jetbrains Mono', 'Courier New'",
     "editor.fontSize": 13,
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.backgroundColourScheme": [
