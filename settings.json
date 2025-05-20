@@ -1,5 +1,5 @@
 {
-    "clangd.path": "/usr/bin/clangd",
+    "clangd.path": "/home/chen/apps/clangd_19.1.2/bin/clangd",
     "cmake.cmakePath": "/usr/bin/cmake",
     "files.exclude": {
         "**/.cache": true,
@@ -7,6 +7,7 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
+        "**/.ccls-cache": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
