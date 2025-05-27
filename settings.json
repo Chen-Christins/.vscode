@@ -13,19 +13,16 @@
     },
     "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
+	"editor.insertSpaces": false,
     "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Jetbrains Mono', 'Courier New'",
     "editor.fontSize": 13,
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontFamily": "'Courier New'",
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.backgroundColourScheme": [
+        "violet",
         "red",
         "orange",
-        "yellow",
-        "green",
-        "blue",
-        "indigo",
-        "violet"
     ],
     "[go]": {
         "editor.formatOnSave": false,
