@@ -11,13 +11,18 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
+    "explorer.autoReveal": true,
+    "files.autoSave": "onFocusChange",
+    "editor.stickyScroll.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.inlayHints.enabled": "onUnlessPressed",
     "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
 	"editor.insertSpaces": false,
     "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Jetbrains Mono', 'Courier New'",
     "editor.fontSize": 13,
     "terminal.integrated.fontSize": 13,
-    "terminal.integrated.fontFamily": "'Courier New'",
+    "terminal.integrated.fontFamily": "'SF Mono', 'Courier New'",
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.backgroundColourScheme": [
         "violet",
@@ -30,6 +35,10 @@
             "source.organizeImports": "never"
         }
     },
+    // "[python]": {
+    //     "editor.defaultFormatter": "ms-python.black-formatter",
+    //     "editor.formatOnSave": false,
+    // },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
