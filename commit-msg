@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# 读取提交信息
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+# 允许的提交类型
+ALLOWED_TYPES=("feat" "fix" "docs" "style" "refactor" "test" "chore" "revert" "build" "ci" "perf")
+
+# 定义正则表达式模式：类型(作用域): 描述
+PATTERN="^($(IFS=\|; echo "${ALLOWED_TYPES[*]}"))(\([a-zA-Z0-9_-]+\))?: .{1,}"
+
+# 跳过合并提交等特殊情况
+if [[ -z "$COMMIT_MSG" ]] || [[ "$COMMIT_MSG" =~ ^Merge ]]; then
+  exit 0
+fi
+
+# 检查提交信息是否符合模式
+if ! echo "$COMMIT_MSG" | grep -qE "$PATTERN"; then
+  echo "❌ ERROR: 提交信息不符合规范！" >&2
+  echo "" >&2
+  echo "规范格式应为: <类型>(<作用域>): <描述>" >&2
+  echo "允许的类型: ${ALLOWED_TYPES[*]}" >&2
+  echo "示例: feat(auth): 增加用户登录功能" >&2
+  echo "示例: fix(api): 修复数据验证错误" >&2
+  exit 1
+fi
+
+exit 0

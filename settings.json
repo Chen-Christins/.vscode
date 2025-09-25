@@ -1,5 +1,5 @@
 {
-    "clangd.path": "/home/chen/apps/clangd_19.1.2/bin/clangd",
+    "clangd.path": "/home/chen/apps/clangd_20.1.8/bin/clangd",
     "cmake.cmakePath": "/usr/bin/cmake",
     "files.exclude": {
         "**/.cache": true,
@@ -11,7 +11,7 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
-    "explorer.autoReveal": true,
+    "explorer.autoReveal": false,
     "files.autoSave": "onFocusChange",
     "editor.stickyScroll.enabled": false,
     "git.openRepositoryInParentFolders": "never",
@@ -20,9 +20,9 @@
     "editor.tabSize": 4,
 	"editor.insertSpaces": false,
     "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Jetbrains Mono', 'Courier New'",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 13,
-    "terminal.integrated.fontFamily": "'SF Mono', 'Courier New'",
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontFamily": "'Jetbrains Mono', 'SF Mono', 'Courier New'",
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.backgroundColourScheme": [
         "violet",
@@ -93,8 +93,10 @@
     "clangd.detectExtensionConflicts": true,
     // 查找的头文件路径，每一项前缀 -I
     "clangd.fallbackFlags": [
-        "-xc++",
         "-std=c++17",
+		"-std=c17",
+	// 	"-I${workspaceFolder}/chen",
+	// 	"-I${workspaceFolder}/src",
     ],
     "editor.links": false,
     "clangd.arguments": [
@@ -180,5 +182,5 @@
         "buffer": "cpp",
         "netfwd": "cpp"
     },
-    "notebook.lineNumbers": "on"
+    "notebook.lineNumbers": "on",
 }
