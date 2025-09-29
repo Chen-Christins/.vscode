@@ -183,4 +183,12 @@
         "netfwd": "cpp"
     },
     "notebook.lineNumbers": "on",
+	"editor.smoothScrolling": true,
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.smoothScrolling": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairsHorizontal": false,
+	"editor.suggestSelection": "recentlyUsed",
+	"editor.acceptSuggestionOnEnter": "smart",
 }
