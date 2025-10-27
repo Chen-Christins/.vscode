@@ -187,8 +187,8 @@
 	"workbench.list.smoothScrolling": true,
 	"terminal.integrated.smoothScrolling": true,
 	"editor.cursorBlinking": "smooth",
-	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairs": false,
 	"editor.guides.bracketPairsHorizontal": false,
-	"editor.suggestSelection": "recentlyUsed",
+	// "editor.suggestSelection": "recentlyUsed",
 	"editor.acceptSuggestionOnEnter": "smart",
 }
