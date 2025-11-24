@@ -16,13 +16,14 @@
     "editor.stickyScroll.enabled": false,
     "git.openRepositoryInParentFolders": "never",
     "editor.inlayHints.enabled": "onUnlessPressed",
+	"editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
 	"editor.insertSpaces": false,
     "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Jetbrains Mono', 'Courier New'",
     "editor.fontSize": 12,
     "terminal.integrated.fontSize": 11,
-    "terminal.integrated.fontFamily": "'Jetbrains Mono', 'SF Mono', 'Courier New'",
+    "terminal.integrated.fontFamily": "'Fira Code', 'Jetbrains Mono', 'SF Mono', 'Courier New'",
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.backgroundColourScheme": [
         "violet",
@@ -105,7 +106,7 @@
         // 在后台自动分析文件（基于complie_commands)
         "--background-index",
         // 同时开启的任务数量
-        "-j=12",
+        "-j=4",
         // 全局补全（会自动补充头文件）
         "--all-scopes-completion",
         // 更详细的补全内容
