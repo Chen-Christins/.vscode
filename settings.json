@@ -36,6 +36,10 @@
             "source.organizeImports": "never"
         }
     },
+	"[scheme]": {
+		"editor.tabSize": 2,
+		"editor.detectIndentation": false
+	},
     // "[python]": {
     //     "editor.defaultFormatter": "ms-python.black-formatter",
     //     "editor.formatOnSave": false,
