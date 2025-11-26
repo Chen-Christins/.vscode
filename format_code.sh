@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # C/C++代码格式化脚本
 # 使用.clang-format配置文件格式化当前目录下所有的C/C++源文件
@@ -133,19 +133,20 @@ format_file() {
         # 检查文件是否有变化
         if ! cmp -s "$file" "$temp_file"; then
             print_success "已格式化: $file"
-            ((formatted_count++))
+            formatted_count=$((formatted_count + 1))
         else
             print_info "无需更改: $file"
         fi
     else
         print_error "格式化失败: $file"
-        ((failed_count++))
+        failed_count=$((failed_count + 1))
         # 恢复原文件
         cp "$temp_file" "$file"
     fi
 
     # 清理临时文件
     rm -f "$temp_file"
+    return 0
 }
 
 # 显示帮助信息
@@ -206,14 +207,14 @@ main() {
     check_config_file
 
     # 查找源文件
-    local source_files=()
+    source_files=()
     if ! find_source_files; then
         exit 1
     fi
 
     # 初始化计数器
-    local formatted_count=0
-    local failed_count=0
+    formatted_count=0
+    failed_count=0
     local total_files=${#source_files[@]}
 
     if [[ "$dry_run" == true ]]; then
@@ -247,7 +248,7 @@ main() {
     local current=0
 
     for file in "${source_files[@]}"; do
-        ((current++))
+        current=$((current + 1))
 
         if [[ "$verbose" == true ]]; then
             echo -n "[$current/$total_files] "
