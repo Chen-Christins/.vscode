@@ -11,6 +11,15 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     },
+	// 不索引一些不必要索引的大文件夹以减少内存和CPU消耗
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/tmp/**": true,
+		"**/bower_components/**": true,
+		"**/dist/**": true
+	},
     "explorer.autoReveal": false,
     "files.autoSave": "onFocusChange",
     "editor.stickyScroll.enabled": false,
@@ -19,6 +28,7 @@
 	"editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
+	"editor.wordWrap": "on",
 	"editor.insertSpaces": false,
     "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Jetbrains Mono', 'Courier New'",
     "editor.fontSize": 12,
@@ -185,11 +195,15 @@
     },
     "notebook.lineNumbers": "on",
 	"editor.smoothScrolling": true,
+	"workbench.editor.wrapTabs": true,
 	"workbench.list.smoothScrolling": true,
 	"terminal.integrated.smoothScrolling": true,
 	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.renderControlCharacters": true,
 	"editor.guides.bracketPairs": false,
 	"editor.guides.bracketPairsHorizontal": false,
 	// "editor.suggestSelection": "recentlyUsed",
 	"editor.acceptSuggestionOnEnter": "smart",
+	"search.followSymlinks": false,
 }
