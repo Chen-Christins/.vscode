@@ -20,6 +20,7 @@
 		"**/bower_components/**": true,
 		"**/dist/**": true
 	},
+    "git.autoRepositoryDetection": "openEditors",
     "explorer.autoReveal": false,
     "files.autoSave": "onFocusChange",
     "editor.stickyScroll.enabled": false,
@@ -29,7 +30,7 @@
     "editor.minimap.maxColumn": 100,
     "editor.tabSize": 4,
 	"editor.wordWrap": "on",
-	"editor.insertSpaces": false,
+	"editor.insertSpaces": true,
     "editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Jetbrains Mono', 'Courier New'",
     "editor.fontSize": 12,
     "terminal.integrated.fontSize": 11,
