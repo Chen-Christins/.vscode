@@ -1,4 +1,4 @@
-# 本项目致力于在 vscode 获得更加便利的 C/C++ Workspace
+#  VSCode Workspace Tools
 
 这里有一个专门用来格式化 C/C++ 文件的脚本 format_code.sh
 ## 脚本特性
